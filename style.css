@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-family: "Space Mono", monospace;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Space Mono", monospace;
+}
+
+h2 {
+    color: rgb(8, 242, 230);
+    text-align: center;
+    font-family: "Space Mono", monospace;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: underline;
+  }
