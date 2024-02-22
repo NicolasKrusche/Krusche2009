@@ -70,18 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
 
-        // if (commentwert == 'Normalgewichtig') {
-        //     mybody.style.background = "linear-gradient(to bottom, white, rgb(0, 165, 0))"
-        //     console.log('body backround changed')
-        //     console.log("Normalgewicht sent");
-        // }
-        // else {
-        //     mybody.style.background = "linear-gradient(to bottom, white, rgb(235, 28, 28))"
-        //     console.log('body backround changed')
-        //     console.log("Normalgewicht not sent");
-        // }
-
-        document.getElementById('startingcomment').innerHTML = "Hey " + username + ", here is your data";
+        document.getElementById('startingcomment').innerHTML = "Hey " + username + ", here is your data:";
         document.getElementById('comment').innerHTML = "You are:";
         document.getElementById('introBmi').innerHTML = "Your BMI is:"; console.log("bmiintro sent");
         document.getElementById('bmiWert').innerHTML = bmi.toFixed(2);
