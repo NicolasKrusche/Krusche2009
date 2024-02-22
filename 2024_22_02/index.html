@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="mybody">
+    <h1>BMI Calculator</h1>
+
+    
+    <form id="myForm">
+        <label for="name" class="inp">
+            <input type="text" id="name" placeholder="&nbsp;">
+            <span class="label">Name</span>
+            <span class="focus-bg"></span>
+        </label>
+    
+
+        <div class="inputboxgender">
+            <label for="gender" class="inp">
+                <input type="text" id="gender" placeholder="&nbsp;">
+                <span class="label">Gender (m or f)</span>
+                <span class="focus-bg"></span>
+            </label>
+        </div>
+    
+
+        <div class="inputboxgroesse">
+            <label for="groesse" class="inp">
+                <input type="text" id="groesse" placeholder="&nbsp;">
+                <span class="label">Height (m.cm)</span>
+                <span class="focus-bg"></span>
+            </label>
+        </div>
+    
+
+        <div class="inputboxgewicht">
+            <label for="gewicht" class="inp">
+                <input type="text" id="gewicht" placeholder="&nbsp;">
+                <span class="label">Weight (kg)</span>
+                <span class="focus-bg"></span>
+            </label>
+        </div>
+        
+    <p></p>
+        <button type="submit">Confirm</button>
+    </form>
+
+    <h2 id="startingcomment"></h2>
+
+    <div class="grid-container">
+      <div class="grid-item" id="introBmi"></div>
+
+      <div id="parent">
+        <div class="grid-item1" id="comment"></div>
+      </div>
+
+      <div class="grid-item2" id="bmiWert"></div>
+      <div class="grid-item3" id="commentwert"></div>
+    </div>
+
+    
+    
+    <script src="script.js"></script>
+
+
+  </body>
+</html>
