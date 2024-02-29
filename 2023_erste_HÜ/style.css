@@ -1,0 +1,167 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-family: "Space Mono", monospace;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Space Mono", monospace;
+}
+
+h2 {
+    color: rgb(8, 242, 230);
+    text-align: center;
+    font-family: "Space Mono", monospace;
+}
+
+img {
+  width: 350px;
+  height: 600px;
+}
+
+div {
+  justify-content: space-evenly;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  body {
+
+    gap: clamp(10px, 4vw, 100px); 
+  
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    margin: 0px;
+  }
+  
+  #trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+  
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+  }
+  
+  body:hover > #trailer {
+    opacity: 1;
+  }
+  
+  #trailer:not([data-type=""]) > #trailer-icon {
+    opacity: 1;
+  }
+  
+  #trailer-icon {
+    font-size: 6px;
+    line-height: 4px;
+    font-style: normal;
+    
+    opacity: 0;
+    transition: opacity 400ms ease;
+  }
+  
+  .myIcon-arrow {
+    
+  }
+  
+  .myIcon-play {
+    
+  }
+  
+  #image01 {
+    background-image: url(image01.jpg);
+  }
+  
+  #image02 {
+    background-image: url(image02.jpg);
+  }
+  
+  .interactable {
+    width: clamp(120px, 40vmin, 600px);
+    aspect-ratio: 1 / 1.5;
+  
+    background-position: center 50%;
+    background-size: 100%;
+    opacity: 0.4;
+  
+    transition: background-size 400ms ease, opacity 400ms ease;
+  }
+  
+
+  .interactable:hover {
+    background-size: 105%;
+    opacity: 0.8;
+  }
+
+
+button {
+  background-color: black;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 47%;
+  transition: all 600ms ease 0s;
+}
+
+button:hover{
+  color: rgb(8, 242, 230);
+}
+  
+
+/*div_text_1 { 
+  
+}
+*/
+
+#image01 {
+  width: 350px;
+  height: 600px;
+}
+
+#image02 {
+  width: 350px;
+  height: 500px;
+}
+
+#groß {
+  justify-content: space-evenly;
+}
