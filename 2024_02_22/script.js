@@ -1,7 +1,7 @@
 class Person {
     constructor(name, gender, groesseM, gewichtKG) {
         if (gender !== 'm' && gender !== 'f') {
-            alert("Gib das Geschlecht Korrekt an! m...Mänlich f....Weiblich");
+            alert("Please enter a correct gender: m = male, f = female");
         }
 
         this.name = name;
