@@ -35,11 +35,11 @@ class Person {
 
         if ((this.gender === 'f' && bmi >= 19 && bmi <= 24) ||
             (this.gender === 'm' && bmi >= 20 && bmi <= 25)) {
-                return 'Normalgewichtig';
+                return 'Normal';
         } else if (bmi < 19) {
-            return 'Untergewichtig';
+            return 'Underweighted';
         } else {
-            return 'Übergewichtig';
+            return 'Overweighted';
         }
     }
 }
