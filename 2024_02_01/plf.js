@@ -11,7 +11,7 @@ class Person {
     }
 
     toString() {
-        return "John Doe (180cm, 80kg)";
+        return "John John (180cm, 80kg)";
     }
 
     getBmi() {
@@ -23,7 +23,7 @@ class Person {
     }
 
     nachName() {
-        return "Doe";
+        return "John";
     }
 
     groesseCM() {
@@ -37,7 +37,7 @@ class Person {
     }
 }
 
-new Person("John Doe", "m", 1.8, 80);
+new Person("John John", "m", 1.8, 80);
 new Person("Eva Schwerlich", "f", 1.6, 120);
 new Person("Peter Leicht", "m", 1.9, 50);
 
