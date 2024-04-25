@@ -26,9 +26,12 @@ class Kassa {
             return rueckgeld;
         }
     }
+
+    toString() {
+        return `Noch ${(this.#geldlade - 10).toFixed(2)} € in Kassa vorhanden.`;
+    }
     
 }
-
 
 class Artikel {
     constructor(name, preis) {
@@ -36,8 +39,6 @@ class Artikel {
       this.preis = preis;
     }
   }
-
-
 
 
 const artikel = {'name': 'Brot', 'preis': 1.89};
