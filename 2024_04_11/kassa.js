@@ -33,6 +33,8 @@ class Kassa {
     
 }
 
+
+
 class Artikel {
     constructor(name, preis) {
       this.name = name;
@@ -41,8 +43,9 @@ class Artikel {
   }
 
 
-const artikel = {'name': 'Brot', 'preis': 1.89};
 
+
+const artikel = {'name': 'Brot', 'preis': 1.89};
 
 const kassa = new Kassa();
 
