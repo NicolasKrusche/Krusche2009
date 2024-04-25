@@ -8,7 +8,9 @@ class Kassa {
 
     scannen(artikel) {
 
-        console.log(`Gescannter Artikel: ${artikel.name} -> Preis: ${artikel.preis} €`);
+        console.log(`
+*----------------------------------------------------*
+Gescannte/r Artikel: ${artikel.name} -> Preis: ${artikel.preis} €`);
         
         return artikel.preis;
     }
@@ -22,13 +24,18 @@ class Kassa {
         else { 
             this.#geldlade = this.#geldlade + preis;
             const rueckgeld = betrag - preis;
-            console.log(`Bezahlt: ${preis.toFixed(2)} € -> Ihr Rückgeld beträgt: ${rueckgeld.toFixed(2)} €`);
+            console.log(`
+Bezahlt: ${preis.toFixed(2)} € -> Ihr Rückgeld beträgt: ${rueckgeld.toFixed(2)} €
+*----------------------------------------------------*`);
             return rueckgeld;
         }
     }
 
     toString() {
-        return `Noch ${(this.#geldlade - 10).toFixed(2)} € in Kassa vorhanden.`;
+        return `
+//----------------------------------//
+Noch ${(this.#geldlade).toFixed(2)} € in Kassa vorhanden.
+//----------------------------------//`;
     }
     
 }
@@ -46,6 +53,7 @@ class Artikel {
 
 
 const artikel = {'name': 'Brot', 'preis': 1.89};
+const artikel2 = {'name': 'Cola', 'preis': 1.49};
 
 const kassa = new Kassa();
 
