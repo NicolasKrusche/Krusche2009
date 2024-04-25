@@ -16,22 +16,19 @@ class Kassa {
     bezahlen(betrag, preis) {
 
         if (betrag < preis) {
-            throw new Error('Nicht genug Geld bezahlt!');
+            throw new Error('nicht ausreichend Geld!');
         }
 
         else { 
             this.#geldlade = this.#geldlade + preis;
             const rueckgeld = betrag - preis;
-            console.log(`Bezahlt: ${preis.toFixed(2)} € - Rückgeld: ${rueckgeld.toFixed(2)} €`);
+            console.log(`Bezahlt: ${preis.toFixed(2)} € -> Ihr Rückgeld beträgt: ${rueckgeld.toFixed(2)} €`);
             return rueckgeld;
         }
     }
-
-    toString() {
-        return `Heute ${(this.#geldlade - 10).toFixed(2)} € eingenommen.`;
-    }
     
 }
+
 
 class Artikel {
     constructor(name, preis) {
@@ -39,6 +36,8 @@ class Artikel {
       this.preis = preis;
     }
   }
+
+
 
 
 const artikel = {'name': 'Brot', 'preis': 1.89};
