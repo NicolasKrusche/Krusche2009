@@ -14,7 +14,7 @@ class Kassa {
 
     get betrag() {
         let betrag = 0;
-        this.#gescannteArtikel.forEach(a => betrag + a.preis)
+        this.#gescannteArtikel.forEach(a => betrag += a.preis)
         return betrag
     }
 }
